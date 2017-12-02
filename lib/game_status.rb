@@ -25,7 +25,7 @@ WIN_COMBINATIONS = [
 # win_index_9 = WIN_COMBINATIONS[8]
 
 def won?(board)
-  board.any? {|i| i != " "}
+  board.any? {|i| i == " "}
 
   win_index_1 = WIN_COMBINATIONS[0]
   if win_index_1[0] == "X" && win_index_1[1] == "X" && win_index_1[2] == "X"
