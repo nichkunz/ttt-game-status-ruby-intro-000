@@ -28,11 +28,11 @@ def won?(board)
   blank_board = board.all? {|i| i != " "}
   return blank_board
 
-  if
-    board.none? {|j| j == " "}
-    full_board == false
-    return full_board
-  end
+  # if
+  #   board.none? {|j| j == " "}
+  #   full_board == false
+  #   return full_board
+  # end
 
   win_index_1 = WIN_COMBINATIONS[0]
   if win_index_1[0] == "X" && win_index_1[1] == "X" && win_index_1[2] == "X"
